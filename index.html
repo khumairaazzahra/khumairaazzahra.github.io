@@ -3,9 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Khumaira Azzahra Yarman</title>
+    <title>Responsive Website</title>
+    <link rel="stylesheet" href="maira.css">
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
 </head>
 <body>
-<p><strong style="font-size: 35px;">HELLO
+    <header>
+        <div class="main-container">
+            <div class="nav">
+                <div class="logo">
+                    <a href="/">KAY</a>
+                </div>
+                
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="burger" onclick="toggleMenu()">
+                        <i class="ph ph-list"></i>
+                    </div>
+                </nav>
+            </div>
+
+            <section id="hero">
+                <div class="hero-left">
+                    <h3 class="pre-title">Selamat Datang di Website</h3>
+                    <h1 class="hero-name">Khumaira Azzahra Yarman</h1>
+                    <p>Website masih dalam proses</p>
+                </div>
+            </section>
+        </div>    
+    </header>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector(".nav-menu").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>
