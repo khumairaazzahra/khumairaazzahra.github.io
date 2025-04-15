@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Font Tulisan</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Lato&display=swap" rel="stylesheet">
+  <!-- OpenDyslexic from CDN -->
+  <link href="https://cdn.jsdelivr.net/gh/antijingoist/open-dyslexic/webkit/stylesheet.css" rel="stylesheet" />
+</head>
+<body>
+
+<section id="galeri">
+  <h2>Galeri Font Tulisan</h2>
+  <div class="galeri-box">
+    <div class="galeri-grid">
+      <div class="galeri-item" style="font-family: 'Times New Roman', serif;">Times New Roman</div>
+      <div class="galeri-item" style="font-family: Arial, sans-serif;">Arial</div>
+      <div class="galeri-item" style="font-family: Calibri, sans-serif;">Calibri</div>
+      <div class="galeri-item" style="font-family: Helvetica, sans-serif;">Helvetica</div>
+      <div class="galeri-item" style="font-family: 'Open Sans', sans-serif;">Open Sans</div>
+      <div class="galeri-item" style="font-family: 'Lato', sans-serif;">Lato</div>
+      <div class="galeri-item" style="font-family: Garamond, serif;">Garamond</div>
+      <div class="galeri-item" style="font-family: Georgia, serif;">Georgia</div>
+      <div class="galeri-item" style="font-family: Verdana, sans-serif;">Verdana</div>
+      <div class="galeri-item" style="font-family: 'OpenDyslexic', sans-serif;">OpenDyslexic</div>
+    </div>
+  </div>
+</section>
+
+<style>
+  body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+  }
+
+  #galeri {
+    padding: 4rem 1rem;
+    text-align: center;
+    background: linear-gradient(to right, #f5f5dc, #e8e4d9);
+  }
+
+  #galeri h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+
+  .galeri-box {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .galeri-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .galeri-item {
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 2rem;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5dc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .galeri-item:hover {
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 1024px) {
+    .galeri-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .galeri-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 480px) {
+    .galeri-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+</body>
+</html>
